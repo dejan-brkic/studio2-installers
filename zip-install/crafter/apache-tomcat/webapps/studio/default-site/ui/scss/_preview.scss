@@ -1,0 +1,27 @@
+.studio-preview {
+
+  top: 50px;
+  transition:padding .5s, transform .5s;
+
+  &, iframe {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  iframe {
+    top: 0;
+    border: 0;
+    height: 100%;
+  }
+
+}
+
+.site-dropdown-open {
+
+}

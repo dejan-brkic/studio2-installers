@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Vendor: CrafterCMS
+Implementation-Title: Crafter Engine
+Implementation-Version: 2.5.0-SNAPSHOT
+Implementation-Vendor-Id: org.craftercms
+Built-By: rdanner
+Build-Jdk: 1.7.0_51
+Created-By: Apache Maven
+Implementation-Build: unknown
+Build-On: 1429810613372
+Archiver-Version: Plexus Archiver
+
