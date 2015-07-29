@@ -1,0 +1,66 @@
+<assembly
+        xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd
+http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 ">
+    <id>Engine</id>
+    <baseDirectory>/crafter</baseDirectory>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>resources/crafter</directory>
+            <outputDirectory></outputDirectory>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>target/bin/crafter-engine-${packageVersion}.war</source>
+            <outputDirectory>apache-tomcat/webapps/</outputDirectory>
+            <destName>ROOT.war</destName>
+        </file>
+        <file>
+            <source>target/bin/crafter-search-server-${packageVersion}.war</source>
+            <outputDirectory>apache-tomcat/webapps/</outputDirectory>
+            <destName>crafter-search.war</destName>
+        </file>
+        <file>
+            <source>target/bin/solr-${solr.version}.war</source>
+            <outputDirectory>apache-tomcat/webapps/</outputDirectory>
+            <destName>solr-crafter.war</destName>
+        </file>
+        <file>
+            <source>target/bin/crafter-studio-publishing-receiver-${packageVersion}.jar</source>
+            <outputDirectory>crafter-deployer</outputDirectory>
+            <destName>crafter-studio-publishing-receiver.jar</destName>
+        </file>
+        <!-- Mongo Apps -->
+
+        <file>
+            <source>target/bin/crafter-profile-${packageVersion}.war</source>
+            <outputDirectory>webapps-mongo</outputDirectory>
+            <destName>crafter-profile.war</destName>
+        </file>
+
+        <file>
+            <source>target/bin/crafter-profile-admin-console-${packageVersion}.war</source>
+            <outputDirectory>crafter-deployer</outputDirectory>
+            <destName>crafter-profile-admin.war</destName>
+        </file>
+
+        <file>
+            <source>target/bin/crafter-social-${packageVersion}.war</source>
+            <outputDirectory>crafter-deployer</outputDirectory>
+            <destName>crafter-social.war</destName>
+        </file>
+        <file>
+            <source>target/bin/crafter-social-admin-${packageVersion}.war</source>
+            <outputDirectory>crafter-deployer</outputDirectory>
+            <destName>crafter-social-admin.war</destName>
+        </file>
+    </files>
+
+</assembly>
+
