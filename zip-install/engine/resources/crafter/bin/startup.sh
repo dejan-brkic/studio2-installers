@@ -4,6 +4,9 @@ cd ..
 rm -rf ./apache-tomcat/logs
 mkdir ./apache-tomcat/logs
 touch ./apache-tomcat/logs/catalina.out
-sh ./apache-tomcat/bin/startup.sh run &
-tail -f ./apache-tomcat/logs/catalina.out &
+cd  ./crafter-deployer
+sh ./start-deploy-agent.sh
+cd ..
+sh ./apache-tomcat/bin/startup.sh
 cd ./bin
+tail -f ../apache-tomcat/logs/catalina.out

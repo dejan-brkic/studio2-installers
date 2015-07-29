@@ -38,6 +38,36 @@
         </dependency>
         <!--MongoApps-->
 
+        <!--MongoApps-->
+
+        <dependency>
+            <groupId>org.craftercms</groupId>
+            <artifactId>crafter-profile-admin-console</artifactId>
+            <version>${packageVersion}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.craftercms</groupId>
+            <artifactId>crafter-profile</artifactId>
+            <version>${packageVersion}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.craftercms</groupId>
+            <artifactId>crafter-social-admin</artifactId>
+            <version>${packageVersion}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.craftercms</groupId>
+            <artifactId>crafter-social</artifactId>
+            <version>${packageVersion}</version>
+            <type>war</type>
+        </dependency>
+
     </dependencies>
 
     <build>
