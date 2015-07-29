@@ -46,18 +46,18 @@ http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 ">
 
         <file>
             <source>target/bin/crafter-profile-admin-console-${packageVersion}.war</source>
-            <outputDirectory>crafter-deployer</outputDirectory>
+            <outputDirectory>webapps-mongo</outputDirectory>
             <destName>crafter-profile-admin.war</destName>
         </file>
 
         <file>
             <source>target/bin/crafter-social-${packageVersion}.war</source>
-            <outputDirectory>crafter-deployer</outputDirectory>
+            <outputDirectory>webapps-mongo</outputDirectory>
             <destName>crafter-social.war</destName>
         </file>
         <file>
             <source>target/bin/crafter-social-admin-${packageVersion}.war</source>
-            <outputDirectory>crafter-deployer</outputDirectory>
+            <outputDirectory>webapps-mongo</outputDirectory>
             <destName>crafter-social-admin.war</destName>
         </file>
     </files>

@@ -103,6 +103,7 @@
                         <descriptor>assembly/zip.xml</descriptor>
                     </descriptors>
                     <finalName>crafter-studio-install</finalName>
+                    <outputDirectory>${project.parent.basedir}/target</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
