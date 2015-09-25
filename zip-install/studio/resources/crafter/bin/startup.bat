@@ -1,5 +1,5 @@
 set JAVA_OPTS=-XX:MaxPermSize=512m -Xms128m -Xmx1024m
-set JAVA_HOME=C:\Program Files\Java\jre7
+REM set JAVA_HOME=C:\Program Files\Java\jre7
 set CATALINA_HOME=./apache-tomcat
 cd ..
 
